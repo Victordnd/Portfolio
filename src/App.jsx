@@ -51,7 +51,7 @@ const content = {
         'Git',
       ],
       downloadLabel: 'Currículo (PDF)',
-      downloadHref: '/Cv.pdf',
+      downloadHref: `${import.meta.env.BASE_URL}Cv.pdf`,
     },
     articles: {
       title: 'Pensamentos Não Commitados',
@@ -128,7 +128,7 @@ const content = {
         'Git',
       ],
       downloadLabel: 'Resume (PDF)',
-      downloadHref: '/Cv.pdf',
+      downloadHref: `${import.meta.env.BASE_URL}Cv.pdf`,
     },
     articles: {
       title: 'Uncommitted Thoughts',
@@ -535,7 +535,7 @@ function App() {
               </div>
               <div className="hero-visual">
                 <div className="avatar">
-                  <img src="/avatar.jpg" alt={t.hero.name} />
+                  <img src={`${import.meta.env.BASE_URL}avatar.jpg`} alt={t.hero.name} />
                 </div>
                 <div className="scanlines" aria-hidden="true" />
               </div>
