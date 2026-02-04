@@ -137,6 +137,102 @@ For me, it was a much more concrete way to understand how AI works outside the c
     href: '#',
     published: true,
   },
+  {
+    id: 'dio-003',
+    groupId: 'python-indent',
+    lang: 'pt',
+    title: 'Por que o Python usa indentação em vez de chaves?',
+    date: 'Fev 2026',
+    excerpt:
+      'Entenda a decisão de design por trás da indentação obrigatória no Python e por que isso melhora a legibilidade.',
+    content: `
+Quando comecei a aprender Python, uma das primeiras coisas que me chamou atenção foi o fato de a linguagem não usar chaves \`{}\` para definir blocos de código, como acontece em linguagens como C#, Java ou JavaScript.
+
+Em vez disso, o Python utiliza **indentação obrigatória**.
+
+Pesquisando sobre isso, li que não é um detalhe técnico por acaso. É uma decisão de design bem consciente.
+
+Em linguagens como C# ou Java, os blocos são definidos por chaves, e a indentação serve apenas para organização visual:
+
+\`\`\`
+if (x > 10) {
+  Console.WriteLine("Maior que 10");
+}
+\`\`\`
+
+No Python, a indentação faz parte da sintaxe:
+
+\`\`\`
+if x > 10:
+  print("Maior que 10")
+\`\`\`
+
+Os dois pontos (\`:\`) no Python servem como um aviso de que um bloco de código vem logo em seguida. Eles não substituem a indentação, mas trabalham junto com ela para deixar a estrutura do código clara e explícita.
+
+Se a indentação estiver errada, o código simplesmente não executa.
+
+Essa escolha vem da filosofia do criador do Python, Guido van Rossum. Ele acreditava que código deveria ser fácil de ler antes de qualquer outra coisa. Essa ideia ficou famosa na frase **“Readability counts”**, presente no **Zen of Python**.
+
+Ao tornar a indentação obrigatória, o Python força todo mundo a escrever código visualmente organizado. Não existe código “funcionando mas ilegível”. Se está confuso de ler, provavelmente está errado.
+
+No começo isso pode incomodar, principalmente para quem vem de outras linguagens. Mas com o tempo, a indentação deixa de ser um obstáculo e vira uma ajuda. A estrutura do código fica clara, a lógica aparece melhor e ler código de outras pessoas se torna muito mais simples.
+
+No fim, a indentação no Python não é uma limitação. É uma escolha que reforça exatamente aquilo que a linguagem mais valoriza: **clareza e legibilidade**.
+
+E você, já conhecia o motivo por trás da indentação obrigatória do Python? Quando começou a aprender, isso te ajudou ou mais atrapalhou?
+`,
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXTc0_t29HEGwdr4Z47jTOecKN5y4ZNaMd8g&s',
+    href: '#',
+    published: true,
+  },
+  {
+    id: 'dio-004',
+    groupId: 'python-indent',
+    lang: 'en',
+    title: 'Why does Python use indentation instead of braces?',
+    date: 'Feb 2026',
+    excerpt:
+      'Understand the design choice behind mandatory indentation in Python and why it improves readability.',
+    content: `
+When I started learning Python, one of the first things that caught my attention was that the language doesn’t use braces \`{}\` to define code blocks, like C#, Java, or JavaScript do.
+
+Instead, Python uses **mandatory indentation**.
+
+After digging into it, I learned this isn’t a random technical detail. It’s a very deliberate design decision.
+
+In languages like C# or Java, blocks are defined by braces, and indentation is just visual organization:
+
+\`\`\`
+if (x > 10) {
+  Console.WriteLine("Greater than 10");
+}
+\`\`\`
+
+In Python, indentation is part of the syntax:
+
+\`\`\`
+if x > 10:
+  print("Greater than 10")
+\`\`\`
+
+The colon (\`:\`) is a signal that a block comes next. It doesn’t replace indentation, but works with it to make the structure clear and explicit.
+
+If the indentation is wrong, the code simply won’t run.
+
+This choice comes from the philosophy of Python’s creator, Guido van Rossum. He believed code should be easy to read before anything else. That idea became famous in the line **“Readability counts”**, found in the **Zen of Python**.
+
+By enforcing indentation, Python pushes everyone to write visually organized code. There’s no such thing as code that “works but is unreadable.” If it’s confusing to read, it’s probably wrong.
+
+At first this can be annoying, especially for people coming from other languages. But over time, indentation stops being a hurdle and becomes a help. The structure becomes clearer, the logic shows up better, and reading other people’s code gets much simpler.
+
+In the end, indentation in Python isn’t a limitation. It’s a choice that reinforces exactly what the language values most: **clarity and readability**.
+
+So, did you already know the reason behind Python’s mandatory indentation? When you started learning, did it help you or get in your way?
+`,
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXTc0_t29HEGwdr4Z47jTOecKN5y4ZNaMd8g&s',
+    href: '#',
+    published: true,
+  },
 ]
 
 export default articles

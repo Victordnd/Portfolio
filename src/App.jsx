@@ -461,8 +461,13 @@ function App() {
             <a
               key={label}
               href={`#sec-${index}`}
-              onClick={() => {
+              onClick={(event) => {
+                event.preventDefault()
                 if (activeArticleId) closeArticle()
+                const target = document.getElementById(`sec-${index}`)
+                if (target) {
+                  target.scrollIntoView({ behavior: 'smooth' })
+                }
               }}
             >
               {label}
