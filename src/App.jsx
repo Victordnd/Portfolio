@@ -72,7 +72,7 @@ const content = {
         { label: 'GitHub', href: 'https://github.com/victordnd' },
       ],
     },
-    footer: 'Feito com React e Vite. © 2026',
+    footer: '© 2026 Victor Daniel. Todos os direitos reservados.',
     photoLabel: 'Foto',
     emptyArticles: 'Sem artigos publicados por enquanto.',
     carouselPrev: 'Anterior',
